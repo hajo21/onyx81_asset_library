@@ -1,0 +1,59 @@
+/* Documents section adjustments */
+.documents-section {
+  padding: 1rem;  /* Reduced padding to make the section more compact */
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.75rem;  /* Reduced margin to bring sections closer together */
+}
+
+/* Documents section title adjustments */
+.documents-section h4 {
+  margin-bottom: 0.5rem;  /* Reduced margin for title space */
+}
+
+/* Document actions */
+.doc-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Table adjustments */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem; /* Reduced bottom margin */
+}
+
+table thead {
+  background: #f0f0f0;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 0.5rem; /* Reduced padding in the cells */
+  border-bottom: 1px solid #eee;
+}
+
+/* "View All" button adjustments */
+.view-all {
+  text-align: right;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .documents-section {
+    padding: 0.75rem; /* Less padding for smaller screens */
+  }
+
+  table th,
+  table td {
+    padding: 0.25rem; /* Smaller padding in table cells for mobile */
+  }
+
+  .view-all {
+    font-size: 14px; /* Smaller font size for "View All" on mobile */
+  }
+}
