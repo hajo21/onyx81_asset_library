@@ -1,0 +1,180 @@
+/* ============================
+   Basic Resets & Global Styles
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-color: #6AAF9A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============================
+   Button Styling (Universal)
+=============================== */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--button-color);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #5aa68a; /* Optional: slightly darker hover state */
+}
+
+/* ============================
+   Responsive Vertical Button Stack
+=============================== */
+.button-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.button-row button {
+  width: 100%;
+  height: 48px;
+  padding-left: 1rem; /* Add padding for left alignment */
+  text-align: left;   /* Left-align the button text */
+  font-size: 16px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-row button:hover {
+  background-color: #5aa68a;
+}
+
+
+
+/* ============================
+   Section Containers
+=============================== */
+.primary-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.site-summary,
+.discover-more,
+.key-areas {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+/* ============================
+   Section Text Styling
+=============================== */
+.summary-text-box {
+  width: 100%;
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.section-text-box.left,
+.section-text-box.middle,
+.section-text-box.right {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+/* ============================
+   Additional Sections
+=============================== */
+
+.milestones-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.plus-icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.add-event-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.calendar-icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: var(--button-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doc-icon {
+  width: 16px;
+  height: 16px;
+  fill: #FFC83D;
+}
+
+.doc-folder-text {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.documents-heading {
+  width: 100%;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}

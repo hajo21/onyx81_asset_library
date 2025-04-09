@@ -1,0 +1,134 @@
+/* Default (Larger Screens) */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center; /* Vertically center the logo and text */
+}
+
+.logo {
+  width: 28px; /* Logo size */
+  height: auto;
+  margin-right: 8px; /* Space between logo and text */
+}
+
+.site-title {
+  font-size: 24px; /* Original text size */
+  font-weight: bold;
+  color: #333;
+  line-height: 1; /* Adjust line-height for better alignment */
+}
+
+/* Navigation Styling */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #6AAF9A; /* Hover effect on links */
+}
+
+/* Hamburger menu (Mobile) */
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.main-nav.open {
+  display: block; /* Show the menu when it’s open */
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo-area {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 24px; /* Smaller logo for mobile */
+    height: auto;
+  }
+
+  .site-title {
+    font-size: 18px; /* Smaller font size for mobile */
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  /* Hide the main nav initially on mobile */
+  .main-nav {
+    display: none; /* Hide menu on mobile by default */
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* Show the hamburger icon on mobile */
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .main-nav.open {
+    display: block;
+    padding: 10px 0; /* Add padding for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  }
+
+  /* Stack menu items vertically */
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px; /* Increase gap for mobile */
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .main-nav a {
+    font-size: 18px; /* Larger font for readability on mobile */
+    padding: 10px;
+  }
+}
